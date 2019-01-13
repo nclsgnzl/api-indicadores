@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Consumo de API Indicadores Financieros + Jquery</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+	<style type="text/css">
+		#indicador_principal{
+			cursor: pointer;
+		}	
+	</style>
+</head>
+<body>
+
+	<div class="container" style="margin-top: 2%">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8" id="valores_actuales">
+				<h4>INDICADORES ECONÓMICOS FINANCIERA</h4>
+				<div class="alert alert-success">
+						<span id="actual_dolar"></span>
+				</div>
+				<div class="alert alert-warning">
+						<span id="actual_uf"></span>
+				</div>
+				<div class="alert alert-danger">
+						<span id="actual_utm"></span>
+				</div>
+				<div class="alert alert-info">
+						<span id="actual_euro"></span>
+				</div>
+
+				<div id="indicador_principal" class="alert alert-info" align="center">
+					<span id="actual">HAGA CLICK AQUÍ PARA VER INDICADOR</span>
+				</div>
+
+				<strong>Nota: Los valores van cambiando diariamente.</strong><br>
+				API consumida desde <i>https://mindicador.cl</i>
+			</div>
+		</div>
+
+	</div>
+</body>
+<script type="text/javascript" src="js/financiero.js"></script>
+</html>
